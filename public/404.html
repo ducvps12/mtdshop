@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Không Tìm Thấy Trang | MTDShop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: clamp(80px, 20vw, 160px);
+            font-weight: 900;
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .error-text {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .error-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: var(--gradient-accent);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .error-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="container">
+        <div class="error-page">
+            <div class="error-code">404</div>
+            <p class="error-text">Oops! Trang bạn tìm kiếm không tồn tại.</p>
+            <a href="/" class="error-btn">
+                ← Quay Về Trang Chủ
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

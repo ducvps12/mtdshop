@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTDShop - Hệ Sinh Thái Dịch Vụ Số</title>
+  <meta name="description"
+    content="MTDShop - Cung cấp tài khoản Premium, VPS, Proxy, dịch vụ Seeding và đào tạo AI. Hệ sinh thái số toàn diện.">
+  <meta property="og:title" content="MTDShop - Hệ Sinh Thái Dịch Vụ Số">
+  <meta property="og:description" content="Tài khoản Premium, VPS, Proxy, Seeding & Đào tạo AI.">
+  <meta property="og:type" content="website">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="navbar__logo-text">MTDSHOP</span><span class="navbar__logo-dot">.</span>
+      </a>
+      <div class="navbar__links">
+        <a href="#about" class="navbar__link">Giới Thiệu</a>
+        <a href="#platforms" class="navbar__link">Nền Tảng</a>
+        <a href="#services" class="navbar__link">Dịch Vụ</a>
+        <a href="#products" class="navbar__link">Sản Phẩm</a>
+        <a href="#contact" class="navbar__link">Liên Hệ</a>
+      </div>
+      <button class="navbar__menu" id="menuBtn" aria-label="Menu">
+        <span class="navbar__menu-text">MENU</span>
+        <span class="navbar__menu-icon">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <a href="#" class="navbar__logo">
+        <span class="navbar__logo-text">MTDSHOP</span><span class="navbar__logo-dot">.</span>
+      </a>
+      <button class="sidebar__close" id="sidebarClose" aria-label="Close">✕</button>
+    </div>
+    <div class="sidebar__nav">
+      <a href="#about" class="sidebar__link">Giới Thiệu</a>
+      <a href="#platforms" class="sidebar__link">Nền Tảng</a>
+      <a href="#services" class="sidebar__link">Dịch Vụ</a>
+      <a href="#products" class="sidebar__link">Sản Phẩm</a>
+      <a href="#contact" class="sidebar__link">Liên Hệ</a>
+    </div>
+    <div class="sidebar__footer">
+      <a href="https://zalo.me/0376263452" target="_blank" class="sidebar__cta">💬 Chat Zalo</a>
+      <a href="tel:0376263452" class="sidebar__phone">📞 0376 263 452</a>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <div class="hero__label fade-up">HỆ SINH THÁI DỊCH VỤ SỐ TOÀN DIỆN</div>
+      <h1 class="hero__title fade-up stagger-1">
+        Chào mừng đến với <span class="hero__accent">MTDShop</span>
+      </h1>
+      <p class="hero__subtitle fade-up stagger-2">
+        Tài khoản Premium · VPS & Proxy · Seeding Social · Đào tạo AI
+      </p>
+      <div class="hero__buttons fade-up stagger-3">
+        <a href="#platforms" class="btn btn--primary">Khám Phá Ngay</a>
+        <a href="#contact" class="btn btn--outline">Liên Hệ Tư Vấn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-item fade-up">
+          <div class="stat-item__icon">🌐</div>
+          <div class="stat-item__number" data-count="5">0</div>
+          <div class="stat-item__label">NỀN TẢNG HOẠT ĐỘNG</div>
+        </div>
+        <div class="stat-item fade-up stagger-1">
+          <div class="stat-item__icon">👥</div>
+          <div class="stat-item__number" data-count="2000">0</div>
+          <div class="stat-item__label">KHÁCH HÀNG TIN TƯỞNG</div>
+        </div>
+        <div class="stat-item fade-up stagger-2">
+          <div class="stat-item__icon">📦</div>
+          <div class="stat-item__number" data-count="18">0</div>
+          <div class="stat-item__label">SẢN PHẨM & DỊCH VỤ</div>
+        </div>
+        <div class="stat-item fade-up stagger-3">
+          <div class="stat-item__icon">⏰</div>
+          <div class="stat-item__number" data-count="24">0</div>
+          <div class="stat-item__label">GIỜ HỖ TRỢ / NGÀY</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="section__header fade-up">
+        <div class="section__label">VỀ CHÚNG TÔI</div>
+        <h2 class="section__title">MTDShop - Đối Tác Số Của Bạn</h2>
+      </div>
+      <div class="about__content fade-up stagger-1">
+        <p class="about__text">
+          MTDShop là hệ sinh thái dịch vụ số toàn diện, cung cấp các giải pháp từ tài khoản Premium, dịch vụ Seeding
+          Social Media, đến hạ tầng VPS & Proxy chuyên nghiệp. Với kinh nghiệm nhiều năm trong lĩnh vực công nghệ số,
+          chúng tôi cam kết mang đến sản phẩm chất lượng cao với giá thành hợp lý.
+        </p>
+        <div class="about__info-grid">
+          <div class="about__info-item">
+            <div class="about__info-label">Thành lập:</div>
+            <div class="about__info-value">2023 - Nemark Digital</div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-label">Lĩnh vực:</div>
+            <div class="about__info-value">Dịch vụ số & Công nghệ</div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-label">Sản phẩm:</div>
+            <div class="about__info-value">Premium Accounts, VPS, Proxy, AI</div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-label">Hỗ trợ:</div>
+            <div class="about__info-value">24/7 qua Zalo & Hotline</div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-label">Thanh toán:</div>
+            <div class="about__info-value">Chuyển khoản, Momo, ZaloPay</div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-label">Cam kết:</div>
+            <div class="about__info-value">Bảo hành & Hoàn tiền 100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcement -->
+  <section class="section">
+    <div class="container">
+      <div class="announcement fade-up">
+        <div class="announcement__badge">📢 THÔNG BÁO QUAN TRỌNG</div>
+        <h3 class="announcement__title">Hệ Thống Đang Chuyển Đổi</h3>
+        <p class="announcement__text">
+          Hệ thống <strong>mtdshop247.com</strong> hiện đang tạm ngưng hoạt động.
+          Dịch vụ <strong>Seeding</strong> & <strong>Tài khoản Premium</strong> vẫn hoạt động bình thường trên các nền
+          tảng mới bên dưới. Toàn bộ dữ liệu đã được chuyển đổi an toàn.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms -->
+  <section class="section section--alt" id="platforms">
+    <div class="container">
+      <div class="section__header fade-up">
+        <div class="section__label">NỀN TẢNG MỚI</div>
+        <h2 class="section__title">Truy Cập Dịch Vụ Tại Đây</h2>
+      </div>
+      <div class="cards-grid cards-grid--3 fade-up stagger-1">
+        <a href="https://nemarksocial.com" target="_blank" class="service-card">
+          <div class="service-card__icon">🌐</div>
+          <h3 class="service-card__title">NemarkSocial.com</h3>
+          <span class="service-card__tag tag--new">MỚI</span>
+          <p class="service-card__desc">Seeding Social & Tài khoản Premium - Nền tảng chính</p>
+          <span class="service-card__link">Truy cập →</span>
+        </a>
+        <a href="https://tingtingsocial.com" target="_blank" class="service-card">
+          <div class="service-card__icon">💫</div>
+          <h3 class="service-card__title">TingTingSocial.com</h3>
+          <span class="service-card__tag tag--hot">HOT</span>
+          <p class="service-card__desc">Dịch vụ tăng tương tác Social Media đa nền tảng</p>
+          <span class="service-card__link">Truy cập →</span>
+        </a>
+        <a href="https://shop.nemarkdigital.com" target="_blank" class="service-card">
+          <div class="service-card__icon">🛒</div>
+          <h3 class="service-card__title">Shop.NemarkDigital</h3>
+          <span class="service-card__tag tag--new">MỚI</span>
+          <p class="service-card__desc">Cửa hàng sản phẩm số & Key bản quyền chính hãng</p>
+          <span class="service-card__link">Truy cập →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infrastructure Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__header fade-up">
+        <div class="section__label">DỊCH VỤ HẠ TẦNG</div>
+        <h2 class="section__title">VPS & Proxy Chuyên Nghiệp</h2>
+      </div>
+      <div class="cards-grid cards-grid--2 fade-up stagger-1">
+        <a href="https://hci.mtdvps.com" target="_blank" class="service-card">
+          <div class="service-card__icon">🖥️</div>
+          <h3 class="service-card__title">HCI.MTDVPS.com</h3>
+          <span class="service-card__tag tag--pro">PRO</span>
+          <p class="service-card__desc">VPS Hosting hiệu năng cao - HCI Infrastructure. Uptime 99.9%</p>
+          <span class="service-card__link">Truy cập →</span>
+        </a>
+        <a href="https://mtdproxy.com" target="_blank" class="service-card">
+          <div class="service-card__icon">🔒</div>
+          <h3 class="service-card__title">MTDProxy.com</h3>
+          <span class="service-card__tag tag--pro">PRO</span>
+          <p class="service-card__desc">Proxy xoay, Proxy tĩnh - Residential & Datacenter đa quốc gia</p>
+          <span class="service-card__link">Truy cập →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI & Training -->
+  <section class="section section--alt" id="ai">
+    <div class="container">
+      <div class="section__header fade-up">
+        <div class="section__label">AI & ĐÀO TẠO</div>
+        <h2 class="section__title">Gemini Ultra & Vibe Code</h2>
+      </div>
+      <div class="ai-card fade-up stagger-1">
+        <div class="ai-card__header">
+          <div class="ai-card__icon">🤖</div>
+          <div>
+            <div class="ai-card__title">oshioxi.com</div>
+            <div class="ai-card__subtitle">AI & Vibe Coding Platform</div>
+          </div>
+        </div>
+        <ul class="ai-card__features">
+          <li>Hỗ trợ kích hoạt Gemini Ultra / Pro</li>
+          <li>Đào tạo Vibe Coding - Lập trình cùng AI</li>
+          <li>Hướng dẫn sử dụng Cursor, Claude, ChatGPT hiệu quả</li>
+          <li>Tư vấn và cung cấp API keys cho các mô hình AI</li>
+          <li>Workshop & khóa học online 1-1</li>
+        </ul>
+        <a href="https://oshioxi.com" target="_blank" class="btn btn--primary">Khám Phá Ngay →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Products -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section__header fade-up">
+        <div class="section__label">SẢN PHẨM</div>
+        <h2 class="section__title">Tài Khoản Premium</h2>
+      </div>
+      <div class="product-grid fade-up stagger-1">
+        <div class="product-item">
+          <div class="product-item__emoji">▶️</div>
+          <div class="product-item__name">Youtube Premium</div>
+          <div class="product-item__price">35,100đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">✨</div>
+          <div class="product-item__name">Google Gemini Pro</div>
+          <div class="product-item__price">126,360đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">✂️</div>
+          <div class="product-item__name">Capcut Pro</div>
+          <div class="product-item__price">41,600đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🤖</div>
+          <div class="product-item__name">ChatGPT Plus</div>
+          <div class="product-item__price">78,000đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🎬</div>
+          <div class="product-item__name">Netflix Ultra 4K</div>
+          <div class="product-item__price">93,600đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🎨</div>
+          <div class="product-item__name">Canva Pro</div>
+          <div class="product-item__price">18,954đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🎥</div>
+          <div class="product-item__name">Google VEO3 Ultra</div>
+          <div class="product-item__price">234,000đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">📱</div>
+          <div class="product-item__name">Nhóm Zalo 1000</div>
+          <div class="product-item__price">221,000đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">💻</div>
+          <div class="product-item__name">Cursor Pro AI</div>
+          <div class="product-item__price">416,000đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">📐</div>
+          <div class="product-item__name">Adobe Full Apps</div>
+          <div class="product-item__price">45,500đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">📊</div>
+          <div class="product-item__name">Microsoft Office 365</div>
+          <div class="product-item__price">101,400đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">📈</div>
+          <div class="product-item__name">Trading View</div>
+          <div class="product-item__price">122,200đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🎞️</div>
+          <div class="product-item__name">Kling AI Standard</div>
+          <div class="product-item__price">187,200đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🛡️</div>
+          <div class="product-item__name">HMA VPN</div>
+          <div class="product-item__price">70,200đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🎵</div>
+          <div class="product-item__name">Spotify Premium</div>
+          <div class="product-item__price">41,600đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">🚀</div>
+          <div class="product-item__name">Google Antigravity</div>
+          <div class="product-item__price">48,100đ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">📲</div>
+          <div class="product-item__name">Android Full Apps</div>
+          <div class="product-item__price">Liên hệ</div>
+        </div>
+        <div class="product-item">
+          <div class="product-item__emoji">📺</div>
+          <div class="product-item__name">Youtube Premium Family</div>
+          <div class="product-item__price">Liên hệ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section__header fade-up">
+        <div class="section__label">LIÊN HỆ</div>
+        <h2 class="section__title">Hỗ Trợ & Tư Vấn</h2>
+      </div>
+      <div class="contact__card fade-up stagger-1">
+        <p class="contact__subtitle">Đội ngũ hỗ trợ sẵn sàng giúp bạn mọi lúc</p>
+        <div class="contact__methods">
+          <a href="https://zalo.me/0376263452" target="_blank" class="btn btn--primary">💬 Zalo Hỗ Trợ</a>
+          <a href="tel:0376263452" class="btn btn--outline">📞 0376 263 452</a>
+        </div>
+        <p class="contact__hours">⏰ Thời gian hỗ trợ: 8:00 – 24:00 (kể cả cuối tuần & ngày lễ)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__brand">
+            <span class="navbar__logo-text">MTDSHOP</span><span class="navbar__logo-dot">.</span>
+          </div>
+          <p class="footer__about">Hệ sinh thái dịch vụ số toàn diện. Tài khoản Premium, VPS, Proxy & Đào tạo AI.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Nền Tảng</h4>
+          <a href="https://nemarksocial.com" target="_blank" class="footer__link">NemarkSocial.com</a>
+          <a href="https://tingtingsocial.com" target="_blank" class="footer__link">TingTingSocial.com</a>
+          <a href="https://shop.nemarkdigital.com" target="_blank" class="footer__link">Shop.NemarkDigital.com</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Dịch Vụ</h4>
+          <a href="https://hci.mtdvps.com" target="_blank" class="footer__link">MTDVPS - VPS Hosting</a>
+          <a href="https://mtdproxy.com" target="_blank" class="footer__link">MTDProxy - Proxy</a>
+          <a href="https://oshioxi.com" target="_blank" class="footer__link">Oshioxi - AI & Vibe Code</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Liên Hệ</h4>
+          <a href="https://zalo.me/0376263452" target="_blank" class="footer__link">💬 Zalo: 0376 263 452</a>
+          <a href="tel:0376263452" class="footer__link">📞 Hotline: 0376 263 452</a>
+          <span class="footer__link">⏰ 8:00 – 24:00 hàng ngày</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 MTDShop & Nemark Digital. Made with <span class="footer__heart">♥</span> by Mai Tiến Đức</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
